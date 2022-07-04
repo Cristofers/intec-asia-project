@@ -8,6 +8,7 @@ import AdminStudentsPage from "./components/admin-students";
 import AdminTeachers from "./components/admin-teachers";
 import AcademicRecordPage from "./pages/academic-record";
 import UserProfilePage from "./pages/user-profile";
+import RankingPage from "./pages/ranking";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/academic-record" element={<AcademicRecordPage />} />
         <Route path="/user-profile" element={<UserProfilePage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
+        <Route path="/ranking" element={<RankingPage />} />
         <Route path="/log-in" element={<LogInPage />} />
       </Routes>
     </Router>
