@@ -9,18 +9,14 @@ import { MainContainer, InfoContiner, MenuContaier, MenuButton } from "./style";
 import SeparatorLine from "../separatorLine";
 import Wrapper from "../wrapper";
 import { Link, useNavigate } from "react-router-dom";
+import UserImage from "../user-image";
 
 const PrincipalMenu = () => {
   return (
     <Wrapper imageBG="https://www.intec.edu.do/media/zoo/images/INTEC-1_b019455595461015795efdb01fe78d3c.jpg">
       <MainContainer>
         <InfoContiner>
-          <div className="user-image-container">
-            <img
-              className="user-image"
-              src="https://cdn-icons-png.flaticon.com/512/892/892781.png?w=360"
-            />
-          </div>
+          <UserImage size="75" />
           <p className="user-name">Bienvenido, "Nombre de Usuario"</p>
           <div className="wellcome-text-container">
             <p className="wellcome-text">
