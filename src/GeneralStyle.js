@@ -15,4 +15,13 @@ const SeparatorLine = styled.div`
   border: 1px solid ${GeneralStyle.principalColor};
 `;
 
-export { GeneralStyle, SeparatorLine };
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(${(props) => (props.imageBG ? props.imageBG : "#")});
+  width: 100%;
+  height: 100vh;
+`;
+
+export { GeneralStyle, SeparatorLine, Wrapper };

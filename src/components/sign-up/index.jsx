@@ -1,11 +1,11 @@
 import React from "react";
-import { Wrapper, HiperLink, MainForm } from "./style";
-import { SeparatorLine } from "../../GeneralStyle";
+import { HiperLink, MainForm } from "./style";
+import { SeparatorLine, Wrapper } from "../../GeneralStyle";
 import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   return (
-    <Wrapper>
+    <Wrapper imageBG="https://fastly.4sqi.net/img/general/600x600/41014375_uk13e70GiFvyb-uAA8W1XzUBJVpD1012GMZhdhcRQJc.jpg">
       <div>
         <MainForm>
           <h2 className="form-title">Registrar Cuenta</h2>

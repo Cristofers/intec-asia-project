@@ -1,11 +1,11 @@
 import React from "react";
-import { Wrapper, HiperLink, MainForm } from "./style";
-import { SeparatorLine } from "../../GeneralStyle";
+import { HiperLink, MainForm } from "./style";
+import { SeparatorLine, Wrapper } from "../../GeneralStyle";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   return (
-    <Wrapper>
+    <Wrapper imageBG="https://www.intec.edu.do/media/zoo/images/INTEC-1_b019455595461015795efdb01fe78d3c.jpg">
       <div>
         <MainForm>
           <h2 className="form-title">Log in</h2>

@@ -2,15 +2,6 @@ import styled from "styled-components";
 import { GeneralStyle } from "../../GeneralStyle";
 import { Link } from "react-router-dom";
 
-export const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("https://www.intec.edu.do/media/zoo/images/INTEC-1_b019455595461015795efdb01fe78d3c.jpg");
-  width: 100%;
-  height: 100vh;
-`;
-
 export const Container = styled.div``;
 
 export const MainForm = styled.form`
