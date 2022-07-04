@@ -6,6 +6,7 @@ import PrincipalMenuPage from "./pages/principal-menu";
 import AdminSubjectsPage from "./pages/admin-task";
 import AdminStudentsPage from "./components/admin-students";
 import AdminTeachers from "./components/admin-teachers";
+import AcademicRecordPage from "./pages/academic-record";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/admin-subjects" element={<AdminSubjectsPage />} />
         <Route path="/admin-students" element={<AdminStudentsPage />} />
         <Route path="/admin-teachers" element={<AdminTeachers />} />
+        <Route path="/academic-record" element={<AcademicRecordPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/log-in" element={<LogInPage />} />
       </Routes>
