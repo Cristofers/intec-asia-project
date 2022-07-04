@@ -3,16 +3,16 @@ import Layout from "../layout";
 import { BsPencilSquare } from "react-icons/bs";
 import { MainContainer, SubjectContainer } from "./style";
 
-const AdminStudents = () => {
+const AdminTeachers = () => {
   return (
     <Layout
-      title={"Administrar Estudiantes"}
+      title={"Administrar Profesores"}
       Icon={BsPencilSquare}
-      imageWrapperBG="https://www.compartirpalabramaestra.org/sites/default/files/me-gustan-los-profesores-que-lo-meten-en-la-pelicula.jpg"
+      imageWrapperBG="https://plustatic.com/5550/conversions/tipos-profesores-default.jpg"
     >
       <MainContainer>
         <form className="search-subject">
-          <label htmlFor="subject">Buscar Estudiante</label>
+          <label htmlFor="subject">Buscar Profesor</label>
           <input type="text" name="subject" />
           <button>Buscar</button>
         </form>
@@ -20,20 +20,16 @@ const AdminStudents = () => {
         <SubjectContainer>
           <form>
             <label htmlFor="subjectCode">
-              <p>ID estudiante</p>
+              <p>Asignatura/as</p>
               <input type="text" autoComplete="off" name="subjectCode" />
             </label>
             <label htmlFor="teacher">
-              <p>Trimestre en curso</p>
+              <p>Secciones a su cargo</p>
               <input type="text" autoComplete="off" name="teacher" />
             </label>
             <label htmlFor="section">
-              <p>Cantidad de asignaturas en curso</p>
+              <p>Días de trabajo</p>
               <input type="text" autoComplete="off" name="section" />
-            </label>
-            <label htmlFor="estudentsCount">
-              <p>Carrera</p>
-              <input type="text" autoComplete="off" name="estudentsCount" />
             </label>
             <input
               type="submit"
@@ -47,4 +43,4 @@ const AdminStudents = () => {
   );
 };
 
-export default AdminStudents;
+export default AdminTeachers;

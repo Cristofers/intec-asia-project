@@ -5,6 +5,7 @@ import LogInPage from "./pages/log-in";
 import PrincipalMenuPage from "./pages/principal-menu";
 import AdminSubjectsPage from "./pages/admin-task";
 import AdminStudentsPage from "./components/admin-students";
+import AdminTeachers from "./components/admin-teachers";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<PrincipalMenuPage />} />
         <Route path="/admin-subjects" element={<AdminSubjectsPage />} />
         <Route path="/admin-students" element={<AdminStudentsPage />} />
+        <Route path="/admin-teachers" element={<AdminTeachers />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/log-in" element={<LogInPage />} />
       </Routes>
