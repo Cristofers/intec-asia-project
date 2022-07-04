@@ -8,6 +8,7 @@ import AdminStudentsPage from "./components/admin-students";
 import AdminTeachers from "./components/admin-teachers";
 import AcademicRecordPage from "./pages/academic-record";
 import UserProfilePage from "./pages/user-profile";
+import CalculatedIndexPage from "./pages/calculated-index";
 import RankingPage from "./pages/ranking";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/user-profile" element={<UserProfilePage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/ranking" element={<RankingPage />} />
+        <Route path="/calculated-index" element={<CalculatedIndexPage />} />
         <Route path="/log-in" element={<LogInPage />} />
       </Routes>
     </Router>
