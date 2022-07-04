@@ -1,6 +1,7 @@
 import React from "react";
 import { HiperLink, MainForm } from "./style";
-import { SeparatorLine, Wrapper } from "../../GeneralStyle";
+import SeparatorLine from "../separatorLine";
+import Wrapper from "../wrapper";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {

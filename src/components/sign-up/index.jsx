@@ -1,7 +1,8 @@
 import React from "react";
 import { HiperLink, MainForm } from "./style";
-import { SeparatorLine, Wrapper } from "../../GeneralStyle";
+import SeparatorLine from "../separatorLine";
 import { Link, useNavigate } from "react-router-dom";
+import Wrapper from "../wrapper";
 
 const SignUp = () => {
   return (
