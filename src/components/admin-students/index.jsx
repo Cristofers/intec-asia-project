@@ -3,16 +3,16 @@ import Layout from "../layout";
 import { BsPencilSquare } from "react-icons/bs";
 import { MainContainer, SubjectContainer } from "./style";
 
-const AdminSubjects = () => {
+const AdminStudents = () => {
   return (
     <Layout
-      title={"Administrar Asignaturas"}
+      title={"Administrar Estudiantes"}
       Icon={BsPencilSquare}
-      imageWrapperBG="https://www.intec.edu.do/media/zoo/images/INTEC-1_b019455595461015795efdb01fe78d3c.jpg"
+      imageWrapperBG="https://www.questionpro.com/blog/wp-content/uploads/2018/08/Encuestas-estudiantes-768x512.jpg"
     >
       <MainContainer>
         <form className="search-subject">
-          <label htmlFor="subject">Buscar Asignatura</label>
+          <label htmlFor="subject">Buscar Estudiante</label>
           <input type="text" name="subject" />
           <button>Buscar</button>
         </form>
@@ -20,24 +20,20 @@ const AdminSubjects = () => {
         <SubjectContainer>
           <form>
             <label htmlFor="subjectCode">
-              <p>Código asignatura</p>
+              <p>ID estudiante</p>
               <input type="text" autoComplete="off" name="subjectCode" />
             </label>
             <label htmlFor="teacher">
-              <p>Profesor encargado</p>
+              <p>Trimestre en curso</p>
               <input type="text" autoComplete="off" name="teacher" />
             </label>
             <label htmlFor="section">
-              <p>Sección</p>
+              <p>Cantidad de asignaturas en curso</p>
               <input type="text" autoComplete="off" name="section" />
             </label>
             <label htmlFor="estudentsCount">
-              <p>Cantidad estudiantes</p>
+              <p>Carrera</p>
               <input type="text" autoComplete="off" name="estudentsCount" />
-            </label>
-            <label htmlFor="Time">
-              <p>Horarios</p>
-              <input type="text" autoComplete="off" name="Time" />
             </label>
             <input
               type="submit"
@@ -51,4 +47,4 @@ const AdminSubjects = () => {
   );
 };
 
-export default AdminSubjects;
+export default AdminStudents;

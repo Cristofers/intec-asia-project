@@ -3,9 +3,9 @@ import { SeparatorLine } from "../../GeneralStyle";
 import Wrapper from "../wrapper";
 import { Container } from "./style";
 
-const Layout = ({ children, title, Icon }) => {
+const Layout = ({ children, title, Icon, imageWrapperBG }) => {
   return (
-    <Wrapper imageBG="https://www.intec.edu.do/media/zoo/images/INTEC-1_b019455595461015795efdb01fe78d3c.jpg">
+    <Wrapper imageBG={imageWrapperBG ? imageWrapperBG : "#"}>
       <Container>
         <h1 className="title">
           {Icon ? <Icon className="title-icon" /> : ""}
