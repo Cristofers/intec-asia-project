@@ -13,6 +13,7 @@ import RankingPage from "./pages/ranking";
 import StudentsRankingPage from "./pages/students-ranking";
 import ModifySubjectsPage from "./pages/modify-subjects";
 import AddSubjectPage from "./pages/add-subjects";
+import AdminUsers from "./components/admin-users";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/calculated-index" element={<CalculatedIndexPage />} />
         <Route path="/students-ranking" element={<StudentsRankingPage />} />
         <Route path="/add-subject" element={<AddSubjectPage />} />
+        <Route path="/admin-users" element={<AdminUsers />} />
         <Route path="/modify-subject" element={<ModifySubjectsPage />} />
         <Route path="/log-in" element={<LogInPage />} />
       </Routes>
