@@ -12,8 +12,8 @@ const AdminTeachers = () => {
     >
       <MainContainer>
         <form className="search-subject">
-          <label htmlFor="subject">Buscar Profesor</label>
-          <input type="text" name="subject" />
+          <label htmlFor="teacher">Buscar Profesor</label>
+          <input type="text" name="teacher" />
           <button>Buscar</button>
         </form>
         <p className="subject-informacion-title">Informacion de Profesor</p>
@@ -23,13 +23,13 @@ const AdminTeachers = () => {
               <p>Asignatura/as</p>
               <input type="text" autoComplete="off" name="subjectCode" />
             </label>
-            <label htmlFor="teacher">
+            <label htmlFor="sections-charge">
               <p>Secciones a su cargo</p>
-              <input type="text" autoComplete="off" name="teacher" />
+              <input type="text" autoComplete="off" name="sections-charge" />
             </label>
-            <label htmlFor="section">
+            <label htmlFor="work-days">
               <p>Días de trabajo</p>
-              <input type="text" autoComplete="off" name="section" />
+              <input type="text" autoComplete="off" name="work-days" />
             </label>
             <input
               type="submit"

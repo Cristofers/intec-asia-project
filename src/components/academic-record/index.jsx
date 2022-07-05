@@ -14,7 +14,7 @@ const AcademicRecord = () => {
         <p className="title">Reporte de Historial Académico</p>
         <form>
           <label htmlFor="trimestry">Seleccionar Periodo</label>
-          <select name="trimestry" id="cars" className="form-selection">
+          <select name="trimestry" className="form-selection">
             <option value="Trimestre Actual">Trimestre Actual</option>
           </select>
           <button>Generar Reporte</button>

@@ -13,7 +13,7 @@ const Ranking = () => {
       <MainContainer>
         <form>
           <label htmlFor="trimestry">Seleccionar grupo</label>
-          <select name="trimestry" id="cars" className="form-selection">
+          <select name="trimestry" className="form-selection">
             <option value="Trimestre Actual">IDS333-03</option>
           </select>
           <button>Generar Ranking</button>

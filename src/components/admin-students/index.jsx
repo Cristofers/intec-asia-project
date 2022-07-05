@@ -23,17 +23,17 @@ const AdminStudents = () => {
               <p>ID estudiante</p>
               <input type="text" autoComplete="off" name="subjectCode" />
             </label>
-            <label htmlFor="teacher">
+            <label htmlFor="trimestry">
               <p>Trimestre en curso</p>
-              <input type="text" autoComplete="off" name="teacher" />
+              <input type="text" autoComplete="off" name="trimestry" />
             </label>
             <label htmlFor="section">
               <p>Cantidad de asignaturas en curso</p>
               <input type="text" autoComplete="off" name="section" />
             </label>
-            <label htmlFor="estudentsCount">
+            <label htmlFor="career">
               <p>Carrera</p>
-              <input type="text" autoComplete="off" name="estudentsCount" />
+              <input type="text" autoComplete="off" name="career" />
             </label>
             <input
               type="submit"

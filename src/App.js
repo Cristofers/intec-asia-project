@@ -10,6 +10,7 @@ import AcademicRecordPage from "./pages/academic-record";
 import UserProfilePage from "./pages/user-profile";
 import CalculatedIndexPage from "./pages/calculated-index";
 import RankingPage from "./pages/ranking";
+import StudentsRankingPage from "./pages/students-ranking";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/ranking" element={<RankingPage />} />
         <Route path="/calculated-index" element={<CalculatedIndexPage />} />
+        <Route path="/students-ranking" element={<StudentsRankingPage />} />
         <Route path="/log-in" element={<LogInPage />} />
       </Routes>
     </Router>
