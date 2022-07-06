@@ -2,13 +2,13 @@ import React from "react";
 import { HiperLink, MainForm } from "./style";
 import SeparatorLine from "../separatorLine";
 import Wrapper from "../wrapper";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ handleFormSubmit, handleChange, data }) => {
   return (
     <Wrapper imageBG="https://www.intec.edu.do/media/zoo/images/INTEC-1_b019455595461015795efdb01fe78d3c.jpg">
       <div>
-        <MainForm>
+        <MainForm onSubmit={(e) => handleFormSubmit(e)}>
           <h2 className="form-title">Log in</h2>
           <SeparatorLine />
           <label className="form-label" htmlFor="studentID">
@@ -20,7 +20,8 @@ const Login = () => {
             name="studentID"
             type="text"
             autoComplete="off"
-            // onChange={handleChange}
+            value={data.studentID}
+            onChange={handleChange}
           />
           <label className="form-label" htmlFor="password">
             Ingrese Contraseña
@@ -30,13 +31,14 @@ const Login = () => {
             placeholder="Password goes here..."
             name="password"
             type="password"
-            // onChange={handleChange}
+            value={data.password}
+            onChange={handleChange}
           />
           <SeparatorLine />
-          <HiperLink to="/SignUp">¿Olvidaste tu Contraseña?</HiperLink>
+          {/* <HiperLink to="/SignUp">¿Olvidaste tu Contraseña?</HiperLink> */}
           <input className="form-button" value="Iniciar Secion" type="submit" />
-          <p>--o--</p>
-          <input className="form-button" value="Registrarse" type="button" />
+          {/* <p>--o--</p> */}
+          {/* <input className="form-button" value="Registrarse" type="button" /> */}
         </MainForm>
       </div>
     </Wrapper>

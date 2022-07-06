@@ -8,16 +8,19 @@ import {
 import { MainContainer, InfoContiner, MenuContaier, MenuButton } from "./style";
 import SeparatorLine from "../separatorLine";
 import Wrapper from "../wrapper";
+import AuthService from "../../AuthProject";
 import { Link, useNavigate } from "react-router-dom";
 import UserImage from "../user-image";
 
 const PrincipalMenu = () => {
+  const Auth = new AuthService();
+  const navigate = useNavigate();
   return (
     <Wrapper imageBG="https://www.intec.edu.do/media/zoo/images/INTEC-1_b019455595461015795efdb01fe78d3c.jpg">
       <MainContainer>
         <InfoContiner>
           <UserImage size="75" />
-          <p className="user-name">Bienvenido, "Nombre de Usuario"</p>
+          <p className="user-name">Bienvenido, {Auth.getProfile().username}</p>
           <div className="wellcome-text-container">
             <p className="wellcome-text">
               Bienvenido a la aplicacion de calculo de índice academico del
@@ -47,22 +50,29 @@ const PrincipalMenu = () => {
           </div>
         </InfoContiner>
         <MenuContaier>
-          <MenuButton to="/">
+          <MenuButton to="/calculated-index">
             <AiFillCalculator className="menu-button-icon" />
             <p className="menu-button-text">Calcular Índice Académico</p>
           </MenuButton>
-          <MenuButton to="/">
+          <MenuButton to="/academic-record">
             <AiFillFileText className="menu-button-icon" />
             <p className="menu-button-text">Ver Historial Académico</p>
           </MenuButton>
-          <MenuButton to="/">
+          <MenuButton to="/modify-subject">
             <AiOutlineCalendar className="menu-button-icon" />
             <p className="menu-button-text">Seleccionar Asignaturas</p>
           </MenuButton>
-          <MenuButton to="/">
+
+          <MenuButton
+            onClick={() => {
+              Auth.logout();
+            }}
+            to="/log-in"
+          >
             <AiFillSetting className="menu-button-icon" />
-            <p className="menu-button-text">Configuración</p>
+            <p className="menu-button-text">Log Out</p>
           </MenuButton>
+
           <div className="helpContainer">
             <AiOutlineCalendar className="helpContainer-icon" />
             <p className="helpContainer-text">¿Necesitas Ayuda?</p>

@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../layout";
 import { MainContainer } from "./style";
 import { BsFillPencilFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const ModifySubject = () => {
   return (
@@ -13,7 +14,10 @@ const ModifySubject = () => {
       <MainContainer>
         <p className="title">Trimestre “Trimestre actual”</p>
         <div className="button-container">
-          <button>Agregar Asignaturas</button>
+          <button>
+            <Link to="/add-subject">Agregar Asignaturas </Link>
+          </button>
+
           <button>Guardar Cambios</button>
         </div>
 
