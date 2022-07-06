@@ -23,15 +23,16 @@ const App = () => {
         <Route path="/" element={<PrincipalMenuPage />} />
         <Route path="/admin-users" element={<AdminUsers />} />
         <Route path="/admin-subjects" element={<AdminSubjectsPage />} />
+        <Route path="/admin-task" element={<AdminSubjectsPage />} />
         <Route path="/admin-students" element={<AdminStudentsPage />} />
         <Route path="/admin-teachers" element={<AdminTeachers />} />
         <Route path="/user-profile" element={<UserProfilePage />} />
-        <Route path="/add-subject" element={<AddSubjectPage />} />
+        <Route path="/add-subjects" element={<AddSubjectPage />} />
         <Route path="/calculated-index" element={<CalculatedIndexPage />} />
         <Route path="/academic-record" element={<AcademicRecordPage />} />
         <Route path="/ranking" element={<RankingPage />} />
         <Route path="/students-ranking" element={<StudentsRankingPage />} />
-        <Route path="/modify-subject" element={<ModifySubjectsPage />} />
+        <Route path="/modify-subjects" element={<ModifySubjectsPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/log-in" element={<LogInPage />} />
         <Route path="*" element={<PrincipalMenuPage />} />
